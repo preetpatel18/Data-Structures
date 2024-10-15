@@ -1,0 +1,24 @@
+5
+Who was the murderer?
+How many items spawned total? 
+How many rooms were there in the mansion?
+Who moved first each turn?
+How many murder weapons were used?
+9
+TIME,PLAYER,DEATH
+ROOM,PLAYER,DEATH
+ROOM,ITEM,DROP
+ROOM,ITEM,GRAB
+TIME,ITEM,DROP
+TIME,ITEM,GRAB
+ROOM,PLAYER,TIME
+PLAYER,TIME,GRAB
+PLAYER,TIME,DROP
+7
+What line in the Mansion nextTurn() method decides how many moves a player gets?
+What line in Mansion.java decides the cooldown when a murderer kills someone?
+What line in the Mansion nextTurn() method increments the time at the end of each turn?
+What line in Mansion.java changes the current player's location attribute after they move?
+What line in Mansion.java returns false if the murderer wins?
+What line in the Mansion constructor calls the createMansion method?
+What line in the Mansion constructor sets the StdRandom seed with the calculated NetID hash?
