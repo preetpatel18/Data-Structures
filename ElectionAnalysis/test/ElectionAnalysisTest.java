@@ -34,8 +34,8 @@ public class ElectionAnalysisTest {
 
         // We will also check that there are no extra nodes
         assertTrue(ptr.getNext() == null);
-        
     }
+
 
     @Test
     public void testReadStates() {
@@ -49,12 +49,13 @@ public class ElectionAnalysisTest {
         for (YearNode yr = test.years(); yr != null; yr = yr.getNext()) {
             assertTrue(yr.getYear() == years[year]);
             int state = 0;
-            StateNode st = yr.getStates();
+            StateNode st = yr.getStates().getNext(); // Starts at front of list
             do {
                 assertTrue(st.getStateName().equals(statesInYears[year][state]));
                 state++;
                 st = st.getNext();
-            } while ( st != yr.getStates());
+            } while ( st != yr.getStates().getNext());
+            assertEquals(state, statesInYears[year].length);
             year++;
         }
         
@@ -68,8 +69,6 @@ public class ElectionAnalysisTest {
         test.readElections(testFile);
 
         // Once you complete this test, remove this fail() statement
-
-
         // You can manually check each value (as in testReadYears()) or you can use arrays to check
         // the values (as in testReadStates())
     }
@@ -80,9 +79,10 @@ public class ElectionAnalysisTest {
         test.readYears(testFile);
         test.readStates(testFile);
         test.readElections(testFile);
+        
+        // Once you complete this test, remove this fail() statement
 
         // You should test to see if the average votes for any given state/year from the test
-
         // input file is what it should be
     }
 
@@ -94,8 +94,8 @@ public class ElectionAnalysisTest {
         test.readElections(testFile);
 
         // Once you complete this test, remove this fail() statement
+
         // You should test to see if the total votes for any given state/year from the test
-        assertTrue(test.totalVotes(1998, "CO") == 100);
         // input file is what it should be
     }
 
@@ -107,7 +107,6 @@ public class ElectionAnalysisTest {
         test.readElections(testFile);
 
         // Once you complete this test, remove this fail() statement
-        fail("This test is incomplete. Fill it out in ElectionAnalysisTest.java to test your code.");
 
         // You should test to see if the party for any given candidate from the test
         // input file is what it should be

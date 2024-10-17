@@ -970,7 +970,8 @@ public class Driver implements MouseInputListener {
         YearNode ptr = election.years();
         while (ptr != null) {
             if (ptr.getYear() > year) {
-                break;
+                ptr = ptr.getNext();
+                continue;
             }
             StateNode st = ptr.getStates();
             do {

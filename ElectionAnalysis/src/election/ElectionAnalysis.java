@@ -1,7 +1,6 @@
 package election;
 
 import java.io.File;
-
 /* 
  * Election Analysis class which parses past election data for the house/senate
  * in csv format, and implements methods which can return information about candidates
@@ -99,55 +98,48 @@ public class ElectionAnalysis {
      * @param file String filename to parse, in csv format.
      */
     public void readStates(String file) {
-		// WRITE YOUR CODE HERE
-        StdIn.setFile(file);
-        while (StdIn.hasNextLine()) {
-            String[] split = StdIn.readLine().split(",");
-            String stateName = split[1];
-            int year = Integer.parseInt(split[4]);
-            YearNode c = years;
+      StdIn.setFile(file);
+      while (StdIn.hasNextLine()) {
+          String[] split = StdIn.readLine().split(",");
+          String stateName = split[1];
+          int year = Integer.parseInt(split[4]);
+          YearNode c = years;
 
-            // Finding that specific Year.
-            while(c.getYear() != year){
-                c = c.getNext();
-            }
+          // Finding that specific Year.
+          while (c.getYear() != year) {
+              c = c.getNext();
+          }
 
-            // Each Years - State pointers
-            StateNode first = c.getStates(); 
-
-            if(first == null){
-                StateNode newNode = new StateNode();
-                newNode.setStateName(stateName);
-                newNode.setNext(newNode);
-                c.setStates(newNode);
-            }else{
-                // Checking if the state is already inserted;
-                StateNode ptr = first;
-                boolean b = false;
-                do {
-                    if (ptr.getStateName().equals(stateName)) {
-                        b = true;
-                        break;
-                    }
-                    ptr = ptr.getNext();
-                } while (ptr != first);
-
-                //if state Doesn't Exists
-                if(!b){
-                    StateNode newNode = new StateNode();
-                    newNode.setStateName(stateName);
-                    StateNode last = first;
-                    //get to the last node
-                    while(last.getNext() != first){
-                        last = last.getNext();
-                    }
-
-                    newNode.setNext(first);
-                    last.setNext(newNode); 
-                }
-            }   
-        }
-    }
+          // Each Years - State pointers
+          StateNode last = c.getStates(); 
+          if (last == null) {
+              StateNode newNode = new StateNode();
+              newNode.setStateName(stateName);
+              newNode.setNext(newNode);
+              c.setStates(newNode);
+          } else {
+              // Checking if the state is already inserted
+              StateNode ptr = last.getNext(); // head
+              boolean b = false;
+              do {
+                  if (ptr.getStateName().equals(stateName)) {
+                      b = true;
+                      break;
+                  }
+                  ptr = ptr.getNext();
+              } while (ptr != last.getNext()); 
+              //if state Doesn't Exists
+              if (!b) {
+                  StateNode newNode = new StateNode();
+                  newNode.setStateName(stateName);
+                  newNode.setNext(last.getNext());
+                  last.setNext(newNode);
+                  c.setStates(newNode);
+              }
+          }
+      }
+  }
+  
     /*
      * Read in Elections from a given CSV file, and insert them in the
      * correct states list, inside the correct year node.
@@ -184,6 +176,7 @@ public class ElectionAnalysis {
             while (current != null && current.getYear() != year) {
                 current = current.getNext();
             }
+            
     
             // Find the specific State
             StateNode curStateNode = current.getStates();
@@ -216,7 +209,8 @@ public class ElectionAnalysis {
             } else {
                 // B) Create a new ElectionNode if not found
                 ElectionNode newElection = new ElectionNode(raceID, senate, officeID, new int[]{votes}, split, votes, null);
-    
+                newElection.addCandidate(canName, votes, party, winner);
+
                 if (electYear == null) {
                     curStateNode.setElections(newElection);
                 } else {
@@ -265,7 +259,6 @@ public class ElectionAnalysis {
      * @return avg number of votes this state in this year
      */
     public int totalVotes(int year, String stateName) {
-      	// WRITE YOUR CODE HERE
         // Finding the specific Year.
         YearNode current = years;
         while (current != null && current.getYear() != year) {
@@ -274,7 +267,7 @@ public class ElectionAnalysis {
         if(current == null){
             return 0;
         }
-        // I SAID ONE OF MY FREIND LOOKS LIKE HER
+
         // Find the specific State
         StateNode curStateNode = current.getStates();
         StateNode first = curStateNode;
@@ -348,25 +341,25 @@ public class ElectionAnalysis {
      * @return String party abbreviation
      */
     public String candidatesParty(String candidateName) {
-		// WRITE YOUR CODE HERE
         YearNode current = years;
         String politicalParty = null;
-        while (current != null) {
-            
+
+        while (current != null) {    
             StateNode curStateNode = current.getStates();
-            StateNode first = curStateNode;
+            StateNode last = curStateNode;
+
             do {
                 ElectionNode ENode = curStateNode.getElections();
 
                 while(ENode != null){
                     if(ENode.isCandidate(candidateName)){
                         politicalParty = ENode.getParty(candidateName);
-                        break;
                     }
                     ENode = ENode.getNext();
                 }
                 curStateNode = curStateNode.getNext();
-            } while (curStateNode != first); // Loop over states in a circular list
+            } while (curStateNode != last); // Loop over states in a circular list
+            current = current.getNext();
         }
         return politicalParty;
     }
