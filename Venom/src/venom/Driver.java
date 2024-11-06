@@ -16,11 +16,6 @@ public class Driver {
 
     public static void main(String[] args) {
 
-        // Remove the next two lines once you've implemented the Driver
-        System.out.println("You have not yet implemeted the driver!\nIt is not given to you in this assignment.\nView the assignment description or Driver.java for more details.");
-        int i = 0; if (i == 0) {return;} // REMOVE THIS
-
-
         Venom test = new Venom();
         Driver.printCommands();
         String line = StdIn.readLine();
@@ -31,18 +26,22 @@ public class Driver {
                     test = new Venom(); // Starts over
                     System.out.println("Enter a filename: ");
                     String file = StdIn.readLine();
-                    // Call buildTree(file) on the Venom "test" object with the String "file"  
+                    // Call buildTree(file) on the Venom "test" object with the String "file"
+                    test.buildTree(file);  
                     // Then, call printTree() on it.
-
+                    test.printTree();
                     // This line just makes sure standard input is reset to the terminal, not your file
                     StdIn.resetFile();
-
                     break;
                 case "2": 
                     // Call findMostSuitable() on the Venom "test" object and print its result. 
                     // You can use the SymbioteHost toString() method when printing, to get a 
                     // host's info as a string
+                    System.out.println("Most Suitable:");
+                    System.out.println(test.findMostSuitable().toString());
 
+                    System.out.println("Most Suitable with AntiBodies: ");
+                    System.out.println(test.findHostsWithAntibodies().toString());
                     break;
                 case "3": 
                     System.out.println("Enter Min Suitability: ");
@@ -53,19 +52,21 @@ public class Driver {
                     // Then, print out each of the elements in its return ArrayList.
                     // You can use the SymbioteHost toString() method when printing, to get a 
                     // host's info as a string
-
+                    System.out.println(test.findHostsWithinSuitabilityRange(min, max).toString());
                     break;
                 case "4": 
                     System.out.println("Enter a Host Name to delete:");
                     String name = StdIn.readLine();
                     // Call deleteSymbioteHost(name) on the Venom "test" object with the read in host name
                     // Then, print out the tree with test.printTree()
-
+                    test.deleteSymbioteHost(name);
+                    test.printTree();
                     break;
                 case "5": 
                     // Call cleanupTree() on the Venom "test" object
                     // Then print the tree with test.printTree()
-
+                    test.cleanupTree();
+                    test.printTree();
                     break;
                 case "6": 
                     // DO NOT MODIFY

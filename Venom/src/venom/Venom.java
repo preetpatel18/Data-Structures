@@ -59,6 +59,30 @@ public class Venom {
      */
     public void insertSymbioteHost(SymbioteHost symbioteHost) {
         // WRITE YOUR CODE HERE
+        if(root == null){
+            root = symbioteHost;
+        }else{
+            SymbioteHost parent = null;
+            SymbioteHost ptr = root;
+            while(ptr != null){
+                parent = ptr;
+                if(ptr.getName().compareTo(symbioteHost.getName()) > 0){ // ptr is greater then the para;
+                    ptr = ptr.getLeft();
+                }else if(ptr.getName().compareTo(symbioteHost.getName()) < 0){ // ptr is less then the para;
+                    ptr = ptr.getRight();
+                }else{ // they are the same
+                    ptr.setSymbioteCompatibility(symbioteHost.getSymbioteCompatibility());
+                    ptr.setMentalStability(symbioteHost.getMentalStability());
+                    ptr.setHasAntibodies(symbioteHost.hasAntibodies());
+                    return;
+                }
+            }
+            if(parent.getName().compareTo(symbioteHost.getName()) > 0){
+                parent.setLeft(symbioteHost);
+            }else{
+                parent.setRight(symbioteHost);
+            }
+        }
     }
 
     /**
@@ -67,7 +91,11 @@ public class Venom {
      * @param filename filename to read
      */
     public void buildTree(String filename) {
-        // WRITE YOUR CODE HERE
+        SymbioteHost[] temp = createSymbioteHosts(filename);
+        for(SymbioteHost i: temp){
+            insertSymbioteHost(i);
+        }
+        System.out.println(temp.length);
     }
 
     /**
@@ -82,10 +110,35 @@ public class Venom {
      * @return the most compatible SymbioteHost object
      */
     public SymbioteHost findMostSuitable() {
-        // WRITE YOUR CODE HERE
-        return null; // UPDATE this line, provided so code compiles
+        if (root == null) {
+            return null;
+        }
+        return recur(root);
     }
-
+    private SymbioteHost recur(SymbioteHost ptr) {
+        if (ptr == null) {
+            return null;
+        }
+        
+        // Current Node
+        SymbioteHost b = ptr;
+        int best = ptr.calculateSuitability();
+        
+        // Left one
+        SymbioteHost lbh = recur(ptr.getLeft());
+        if (lbh != null && lbh.calculateSuitability() > best) {
+            b = lbh;
+            best = lbh.calculateSuitability();
+        }
+        
+        // Right one
+        SymbioteHost rbh = recur(ptr.getRight());
+        if (rbh != null && rbh.calculateSuitability() > best) {
+            b = rbh;
+        }
+        return b;
+    }
+    
     /**
      * Finds all hosts in the tree that have antibodies. INorder traversal is used to
      * traverse the tree. The hosts that have antibodies are added to an
@@ -95,8 +148,32 @@ public class Venom {
      */
     public ArrayList<SymbioteHost> findHostsWithAntibodies() {
         // WRITE YOUR CODE HERE
-        return null;  // UPDATE this line, provided so code compiles
+        if (root == null) {
+            return null;
+        }
+        ArrayList<SymbioteHost> array = new ArrayList<>();
+
+        return recur2(root, array);  // UPDATE this line, provided so code compiles
     }
+
+    private ArrayList<SymbioteHost> recur2(SymbioteHost ptr, ArrayList<SymbioteHost> arr) {
+        if (ptr == null) {
+            return null;
+        }
+        
+        // left one
+        recur2(ptr.getLeft(), arr);
+        SymbioteHost b = ptr;
+        boolean has = ptr.hasAntibodies();
+        if(has){
+            arr.add(b);
+        }
+        // Right one
+        recur2(ptr.getRight(), arr);
+        return arr;
+    }
+
+
 
     /**
      * Finds all hosts in the tree that have a suitability between the given
@@ -109,8 +186,32 @@ public class Venom {
      * @return an ArrayList of SymbioteHost objects that fall within the range
      */
     public ArrayList<SymbioteHost> findHostsWithinSuitabilityRange(int minSuitability, int maxSuitability) {
-        return null; // UPDATE this line, provided so code compiles
+        if(root == null){
+            return null;
+        }
+        // result
+        ArrayList<SymbioteHost> array = new ArrayList<>();
+        // Queue
+        Queue<SymbioteHost> queue = new Queue<>();
+        queue.enqueue(root);
+
+        // Steps
+        while(!queue.isEmpty()){
+            SymbioteHost temp = queue.dequeue();
+            if(temp != null && temp.calculateSuitability() >= minSuitability && temp.calculateSuitability() <= maxSuitability){
+                array.add(temp);
+            }
+            if(temp.getLeft() != null){
+                queue.enqueue(temp.getLeft());
+            }
+            if(temp.getRight() != null){
+                queue.enqueue(temp.getRight());
+            }
+        }
+
+        return array; // UPDATE this line, provided so code compiles
     }
+
 
     /**
      * Deletes a node from the binary search tree with the given name.
@@ -119,7 +220,39 @@ public class Venom {
      * @param name the name of the SymbioteHost object to delete
      */
     public void deleteSymbioteHost(String name) {
-        // WRITE YOUR CODE HERE
+        root = recur3(root, name);
+    }
+    private SymbioteHost recur3(SymbioteHost ptr, String name){
+        if(ptr == null){
+            return null;
+        }
+        int cmp = ptr.getName().compareTo(name);
+        if(cmp > 0){
+            ptr.setLeft(recur3(ptr.getLeft(), name));
+        }else if(cmp < 0){
+            ptr.setRight(recur3(ptr.getRight(), name));
+        }else{
+            if (ptr.getRight() == null) return ptr.getLeft();
+            if (ptr.getLeft() == null) return ptr.getRight();
+
+            SymbioteHost t = ptr;
+            ptr = findMin(t.getRight());
+            ptr.setRight(deleteMin(t.getRight()));
+            ptr.setLeft(t.getLeft());
+        }
+        return ptr;
+    }
+    private SymbioteHost findMin(SymbioteHost k) {
+        if(k.getLeft() == null) return k;
+        else{return findMin(k.getLeft());}
+    }
+    
+    private SymbioteHost deleteMin(SymbioteHost k) {
+        if (k.getLeft() == null) {
+            return k.getRight();
+        }
+        k.setLeft(deleteMin(k.getLeft())); 
+        return k;
     }
 
     /**
