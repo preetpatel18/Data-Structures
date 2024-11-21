@@ -208,7 +208,7 @@ public class Venom {
                 queue.enqueue(temp.getRight());
             }
         }
-
+        
         return array; // UPDATE this line, provided so code compiles
     }
 
@@ -242,6 +242,7 @@ public class Venom {
         }
         return ptr;
     }
+
     private SymbioteHost findMin(SymbioteHost k) {
         if(k.getLeft() == null) return k;
         else{return findMin(k.getLeft());}

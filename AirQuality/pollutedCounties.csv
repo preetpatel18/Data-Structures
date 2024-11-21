@@ -1,0 +1,111 @@
+State Name,County Name,AQI,Latitude,Longitude,Pollutant Name,Color
+Alabama,Baldwin,90,30.497478,-87.880258,Ozone,Yellow
+Alabama,Jefferson,230,33.553056,-86.815,Carbon monoxide,Purple
+Alabama,Shelby,108,33.0928,-86.8072,Sulfur dioxide,Orange
+Alaska,Fairbanks North Star,155,64.84569,-147.727413,Sulfur dioxide,Red
+Arizona,Gila,154,33.397433,-110.87445,Sulfur dioxide,Red
+Arizona,Maricopa,161,33.36985,-112.62068,Nitrogen dioxide(NO2),Red
+Arkansas,Pulaski,174,34.756189,-92.281296,Sulfur dioxide,Red
+Arkansas,Washington,119,36.1797,-94.116827,Ozone,Orange
+Arkansas,Washington,119,36.011703,-94.167436,Ozone,Orange
+California,Alameda,104,37.687526,-121.784217,Nitrogen dioxide(NO2),Orange
+California,Humboldt,274,40.77678,-124.17949,Sulfur dioxide,Purple
+Colorado,Adams,168,39.838119,-104.94984,Sulfur dioxide,Red
+Colorado,El Paso,153,38.853097,-104.901289,Ozone,Red
+Connecticut,Hartford,162,41.771444,-72.679923,Carbon monoxide,Red
+Connecticut,New Haven,191,41.3014,-72.902871,Sulfur dioxide,Red
+Delaware,New Castle,195,39.739444,-75.558056,Reconstructed Mass PM2.5 LC,Red
+Delaware,New Castle,195,39.739444,-75.558056,Sulfate PM2.5 LC,Red
+Florida,Baker,81,30.201111,-82.441111,Ozone,Yellow
+Florida,Miami-Dade,165,25.785472,-80.284206,Carbon monoxide,Red
+Florida,Orange,115,28.596389,-81.3625,Sulfur dioxide,Orange
+Georgia,Fulton,166,33.7784,-84.3914,Carbon monoxide,Red
+Hawaii,Hawaii,68,19.509778,-155.913417,Sulfur dioxide,Yellow
+Hawaii,Honolulu,117,21.303382,-157.871171,Ozone,Orange
+Hawaii,Kauai,152,21.949599,-159.36624,Sulfur dioxide,Red
+Illinois,Champaign,136,40.05278,-88.37251,Carbon monoxide,Orange
+Illinois,Jo Daviess,154,42.2869,-89.9997,Ozone,Red
+Indiana,Lake,195,41.606662,-87.304943,Ozone,Red
+Indiana,Vanderburgh,172,38.013333,-87.577222,Sulfur dioxide,Red
+Iowa,Polk,162,41.603159,-93.643118,Nitrogen dioxide(NO2),Red
+Kansas,Neosho,95,37.67696,-95.47594,Nitrogen dioxide(NO2),Yellow
+Kansas,Sumner,112,37.47689,-97.366399,Sulfur dioxide,Orange
+Kansas,Wyandotte,166,39.117219,-94.635605,Carbon monoxide,Red
+Kentucky,Campbell,133,39.021881,-84.47445,Nitrogen dioxide(NO2),Orange
+Kentucky,Hardin,151,37.705612,-85.852629,Ozone,Red
+Louisiana,Calcasieu,133,30.262604,-93.285084,Sulfur dioxide,Orange
+Louisiana,Orleans,87,29.996013,-90.11819,Carbon monoxide,Yellow
+Louisiana,West Baton Rouge,140,30.500642,-91.213556,Ozone,Orange
+Maine,Aroostook,142,46.696431,-68.033006,Carbon monoxide,Orange
+Maine,Cumberland,94,43.660246,-70.268965,Ozone,Yellow
+Maryland,Washington,167,39.564178,-77.720244,Ozone,Red
+Massachusetts,Bristol,137,41.685707,-71.169235,Sulfur dioxide,Orange
+Michigan,Kent,197,42.984173,-85.671339,Carbon monoxide,Red
+Michigan,Missaukee,187,44.310555,-84.891865,Ozone,Red
+Michigan,St.Clair,185,42.953336,-82.456229,Sulfur dioxide,Red
+Minnesota,Becker,167,46.851811,-95.846272,Ozone,Red
+Minnesota,Dakota,176,44.706123,-93.285803,Nitrogen dioxide(NO2),Red
+Minnesota,Olmsted,163,43.996908,-92.450366,Ozone,Red
+Mississippi,Jackson,105,30.378287,-88.53393,Nitrogen dioxide(NO2),Orange
+Mississippi,Yalobusha,119,34.002747,-89.799183,Ozone,Orange
+Missouri,Cass,143,38.75961,-94.57983,Ozone,Orange
+Missouri,Iron,150,37.65214,-91.11689,Sulfur dioxide,Orange
+Missouri,SaintLouis,166,38.75264,-90.44884,Nitrogen dioxide(NO2),Red
+Montana,Custer,235,46.411389,-105.812778,Nitrogen dioxide(NO2),Purple
+Montana,Lewisand Clark,161,46.8505,-111.987164,Carbon monoxide,Red
+Montana,Yellowstone,94,45.786579,-108.45878,Sulfur dioxide,Yellow
+Nebraska,Douglas,169,41.247486,-95.973142,Sulfur dioxide,Red
+Nevada,Clark,197,36.815897,-114.050347,Ozone,Red
+Nevada,Washoe,90,39.540917,-119.746761,Carbon monoxide,Yellow
+Nevada,CarsonCity,97,39.1447,-119.7661,Ozone,Yellow
+New Hampshire,Coos,136,44.270093,-71.303821,Ozone,Orange
+New Hampshire,Hillsborough,112,42.86183,-71.878626,Sulfur dioxide,Orange
+New Jersey,Atlantic,195,39.464872,-74.448736,Sulfur dioxide,Red
+New Jersey,Hudson,188,40.731645,-74.066308,Sulfur dioxide,Red
+New Jersey,Morris,154,40.787628,-74.676301,Sulfur dioxide,Red
+New Mexico,Bernalillo,207,35.01708,-106.65739,Nitrogen dioxide(NO2),Purple
+New York,Bronx,228,40.816,-73.902,Sulfur dioxide,Purple
+New York,Essex,159,44.39308,-73.8589,Ozone,Red
+New York,Queens,254,40.73614,-73.82153,Carbon monoxide,Purple
+North Carolina,Durham,121,36.032955,-78.904037,Sulfur dioxide,Orange
+North Carolina,Mecklenburg,150,35.2401,-80.785683,Carbon monoxide,Orange
+North Carolina,Rockingham,108,36.308889,-79.859167,Ozone,Orange
+North Dakota,McKenzie,273,47.5812,-103.2995,Ozone,Purple
+North Dakota,Williams,254,48.392666,-102.910693,Sulfur dioxide,Purple
+Ohio,Butler,185,39.479822,-84.409617,Sulfur dioxide,Red
+Ohio,Cuyahoga,209,41.492117,-81.678449,Nitrogen dioxide(NO2),Purple
+Ohio,Hamilton,182,39.12886,-84.50404,Ozone,Red
+Oklahoma,Dewey,100,36.158414,-98.931973,Ozone,Yellow
+Oklahoma,Kay,95,36.697186,-97.08135,Sulfur dioxide,Yellow
+Oregon,Lane,192,44.026312,-123.083737,Ozone,Red
+Oregon,Multnomah,77,45.496641,-122.602877,Carbon monoxide,Yellow
+Pennsylvania,Berks,263,40.38335,-75.9686,Sulfur dioxide,Purple
+Rhode Island,Kent,126,41.615237,-71.72,Ozone,Orange
+South Carolina,Charleston,92,32.941023,-79.657187,Nitrogen dioxide(NO2),Yellow
+South Carolina,Edgefield,96,33.739963,-81.853635,Sulfur dioxide,Yellow
+South Carolina,York,115,34.977,-81.207,Sulfur dioxide,Orange
+South Dakota,Jackson,208,43.74561,-101.941218,Ozone,Purple
+South Dakota,Minnehaha,173,43.59901,-96.78331,Nitrogen dioxide(NO2),Red
+South Dakota,Pennington,166,44.087397,-103.273777,Sulfur dioxide,Red
+Tennessee,Blount,137,35.63348,-83.941606,Carbon monoxide,Orange
+Tennessee,Davidson,133,36.1424,-86.7341,Sulfur dioxide,Orange
+Texas,Bexar,279,29.51509,-98.620166,Nitrogen dioxide(NO2),Purple
+Texas,Dallas,172,32.820061,-96.860117,Ozone,Red
+Utah,SaltLake,154,40.598056,-111.894167,Carbon monoxide,Red
+Utah,Weber,141,41.303614,-111.987871,Carbon monoxide,Orange
+Vermont,Bennington,156,42.88759,-73.24984,Ozone,Red
+Vermont,Chittenden,158,44.52839,-72.86884,Ozone,Red
+Vermont,Rutland,94,43.608056,-72.982778,Carbon monoxide,Yellow
+Virginia,Arlington,173,38.8577,-77.05922,Nitrogen dioxide(NO2),Red
+Virginia,Fairfax,198,38.77335,-77.10468,Sulfur dioxide,Red
+Virginia,Rockingham,163,38.47753,-78.81952,Sulfur dioxide,Red
+Washington,Clark,87,45.616667,-122.516667,Ozone,Yellow
+Washington,Whatcom,77,48.95074,-122.55441,Ozone,Yellow
+Wisconsin,Dane,243,43.10101,-89.35768,Ozone,Purple
+Wisconsin,Forest,171,45.56498,-88.80859,Sulfur dioxide,Red
+Wisconsin,Milwaukee,225,43.01724,-87.93369,Ozone,Purple
+Wyoming,Albany,132,41.3642,-106.2399,Ozone,Orange
+Wyoming,Campbell,146,44.6522,-105.2903,Nitrogen dioxide(NO2),Orange
+Puerto Rico,Caguas,105,18.198712,-66.052237,Carbon monoxide,Orange
+Puerto Rico,Catano,97,18.431208,-66.141683,Sulfur dioxide,Yellow
+Puerto Rico,Ponce,116,18.009558,-66.627249,Carbon monoxide,Orange

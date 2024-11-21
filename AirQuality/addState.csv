@@ -1,0 +1,17 @@
+State Name,County Name,AQI,Latitude,Longitude,Pollutant Name,Color
+California,Alameda,104,37.687526,-121.784217,Nitric oxide (NO),Orange
+Colorado,Adams,168,39.838119,-104.94984,Carbon monoxide,Red
+Florida,Broward,105,26.053889,-80.256944,Carbon monoxide,Green
+Florida,Broward,105,26.053889,-80.256944,Carbon monoxide,Orange
+Kentucky,Boyd,157,38.45934,-82.64041,Sulfur dioxide,Red
+Louisiana,Ascension,154,30.229653,-90.965628,Nitric oxide (NO),Red
+Minnesota,Anoka,168,45.13768,-93.207615,Lead (TSP) LC,Red
+New Jersey,Atlantic,195,39.464872,-74.448736,Sulfur dioxide,Red
+New York,Bronx,228,40.816,-73.902,Sulfur dioxide,Purple
+North Dakota,Billings,201,46.8943,-103.37853,Sulfur dioxide,Purple
+Ohio,Allen,183,40.770944,-84.0539,Sulfur dioxide,Red
+Pennsylvania,Adams,216,39.92002,-77.30968,Carbon monoxide,Purple
+Texas,Bell,93,31.088002,-97.679734,Nitric oxide (NO),Yellow
+Utah,Box Elder,67,41.945874,-112.233973,Nitric oxide (NO),Yellow
+Virginia,Arlington,173,38.8577,-77.05922,Carbon monoxide,Red
+Wyoming,Albany,132,41.32417,-105.61489,Sulfur dioxide,Orange

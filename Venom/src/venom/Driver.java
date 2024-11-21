@@ -15,7 +15,6 @@ import java.util.ArrayList;
 public class Driver {
 
     public static void main(String[] args) {
-
         Venom test = new Venom();
         Driver.printCommands();
         String line = StdIn.readLine();
@@ -62,13 +61,13 @@ public class Driver {
                     test.deleteSymbioteHost(name);
                     test.printTree();
                     break;
-                case "5": 
+                case "5":
                     // Call cleanupTree() on the Venom "test" object
                     // Then print the tree with test.printTree()
                     test.cleanupTree();
                     test.printTree();
                     break;
-                case "6": 
+                case "6":
                     // DO NOT MODIFY
                     System.out.println("Exiting...");
                     return;

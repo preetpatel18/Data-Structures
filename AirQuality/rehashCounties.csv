@@ -1,0 +1,124 @@
+State Name,County Name,AQI,Latitude,Longitude,Pollutant Name,Color
+California,Alameda,104,37.687526,-121.784217,Nitric oxide (NO),Orange
+California,Alameda,104,37.743065,-122.169935,Carbon monoxide,Orange
+California,Alameda,104,37.814781,-122.282347,Sulfur dioxide,Orange
+California,Butte,86,39.76168,-121.84047,Lead (TSP) STP,Yellow
+California,Butte,87,39.76168,-121.84047,Lead (TSP) STP,Yellow
+California,Butte,87,39.76168,-121.84047,Carbon monoxide,Yellow
+California,Butte,87,39.76168,-121.84047,Nitric oxide (NO),Yellow
+California,Contra Costa,87,37.936013,-122.026154,Carbon monoxide,Yellow
+California,Contra Costa,87,37.936013,-122.026154,Sulfur dioxide,Yellow
+California,Contra Costa,87,37.936013,-122.026154,Nitric oxide (NO),Yellow
+California,Fresno,151,36.705474,-119.741332,Nitric oxide (NO),Red
+California,Fresno,151,36.78538,-119.77321,Lead (TSP) STP,Red
+California,Fresno,151,36.78538,-119.77321,Carbon monoxide,Red
+California,Fresno,151,36.78538,-119.77321,Sulfur dioxide,Red
+California,Fresno,152,36.78538,-119.77321,Sulfur dioxide,Red
+California,Humboldt,274,40.77678,-124.17949,Carbon monoxide,Purple
+California,Humboldt,274,40.77678,-124.17949,Sulfur dioxide,Purple
+California,Kern,111,35.345607,-118.851825,Nitric oxide (NO),Orange
+California,Kern,111,35.356615,-119.062613,Lead (TSP) STP,Orange
+California,Kern,111,35.331612,-118.999961,Carbon monoxide,Orange
+California,Kings,129,36.31567,-119.643447,Nitric oxide (NO),Orange
+California,Los Angeles,192,34.14435,-117.85036,Carbon monoxide,Red
+California,Los Angeles,192,34.14435,-117.85036,Nitric oxide (NO),Red
+California,Los Angeles,192,34.06659,-118.22688,Lead (TSP) STP,Red
+California,Los Angeles,192,34.06659,-118.22688,Lead (TSP) LC,Red
+California,Los Angeles,192,34.06659,-118.22688,Sulfur dioxide,Red
+California,Marin,62,37.97231,-122.520004,Carbon monoxide,Yellow
+California,Marin,62,37.97231,-122.520004,Nitric oxide (NO),Yellow
+California,Monterey,63,36.694261,-121.623271,Carbon monoxide,Yellow
+California,Monterey,63,36.694261,-121.623271,Nitric oxide (NO),Yellow
+California,Orange,97,33.83062,-117.93845,Carbon monoxide,Yellow
+California,Orange,97,33.83062,-117.93845,Nitric oxide (NO),Yellow
+California,Placer,112,38.74643,-121.26498,Lead (TSP) STP,Orange
+California,Placer,112,38.74643,-121.26498,Nitric oxide (NO),Orange
+California,Sacramento,90,38.613779,-121.368014,Sulfur dioxide,Yellow
+California,Sacramento,90,38.613779,-121.368014,Nitric oxide (NO),Yellow
+California,Sacramento,90,38.593322,-121.503795,Carbon monoxide,Yellow
+California,San Bernardino,201,34.06812,-117.52579,Carbon monoxide,Purple
+California,San Bernardino,201,34.06812,-117.52579,Nitric oxide (NO),Purple
+California,San Bernardino,201,34.10002,-117.49201,Sulfur dioxide,Purple
+California,San Bernardino,201,34.106678,-117.274063,Lead (TSP) LC,Purple
+California,San Diego,140,32.631242,-117.059088,Lead (TSP) STP,Orange
+California,San Diego,140,32.985428,-117.082198,Carbon monoxide,Orange
+California,San Diego,140,32.789565,-116.944308,Sulfur dioxide,Orange
+California,San Diego,140,32.789565,-116.944308,Nitric oxide (NO),Orange
+California,San Diego,140,33.130897,-117.272389,Lead (TSP) LC,Orange
+California,San Francisco,61,37.765946,-122.399044,Lead (TSP) STP,Yellow
+California,San Francisco,61,37.765946,-122.399044,Carbon monoxide,Yellow
+California,San Francisco,61,37.765946,-122.399044,Nitric oxide (NO),Yellow
+California,San Joaquin,114,37.961578,-121.281414,Lead (TSP) STP,Orange
+California,San Joaquin,114,37.961578,-121.281414,Carbon monoxide,Orange
+California,San Joaquin,114,37.961578,-121.281414,Nitric oxide (NO),Orange
+California,San Luis Obispo,97,35.02083,-120.56388,Sulfur dioxide,Yellow
+California,San Luis Obispo,97,35.03146,-120.50103,Nitric oxide (NO),Yellow
+California,San Mateo,58,37.482934,-122.20337,Carbon monoxide,Yellow
+California,San Mateo,58,37.482934,-122.20337,Nitric oxide (NO),Yellow
+California,Santa Barbara,77,34.725352,-120.428717,Sulfur dioxide,Yellow
+California,Santa Barbara,77,34.725352,-120.428717,Nitric oxide (NO),Yellow
+California,Santa Barbara,77,34.48974,-120.04692,Carbon monoxide,Yellow
+California,Santa Clara,112,37.348497,-121.894898,Lead (TSP) STP,Orange
+California,Santa Clara,112,37.348497,-121.894898,Carbon monoxide,Orange
+California,Santa Clara,112,37.348497,-121.894898,Sulfur dioxide,Orange
+California,Santa Clara,112,37.348497,-121.894898,Nitric oxide (NO),Orange
+California,Santa Clara,112,37.329841,-121.815438,Lead (TSP) LC,Orange
+California,Solano,97,38.102507,-122.237976,Carbon monoxide,Yellow
+California,Solano,97,38.102507,-122.237976,Sulfur dioxide,Yellow
+California,Solano,97,38.102507,-122.237976,Nitric oxide (NO),Yellow
+California,Sonoma,60,38.403765,-122.818294,Carbon monoxide,Yellow
+California,Sonoma,60,38.403765,-122.818294,Nitric oxide (NO),Yellow
+California,Stanislaus,108,37.642165,-120.994212,Carbon monoxide,Orange
+California,Stanislaus,108,37.488317,-120.836008,Nitric oxide (NO),Orange
+California,Sutter,87,39.138773,-121.618549,Nitric oxide (NO),Yellow
+California,Tulare,156,36.30815,-119.3129,Nitric oxide (NO),Red
+California,Ventura,136,34.276316,-118.683685,Lead (TSP) STP,Orange
+California,Ventura,136,34.276316,-118.683685,Nitric oxide (NO),Orange
+California,Yolo,105,38.53445,-121.7734,Nitric oxide (NO),Orange
+Texas,Bell,93,31.088002,-97.679734,Nitric oxide (NO),Yellow
+Texas,Bexar,279,29.51509,-98.620166,Nitric oxide (NO),Purple
+Texas,Bexar,279,29.275381,-98.311692,Sulfur dioxide,Purple
+Texas,Bexar,279,29.529432,-98.391403,Carbon monoxide,Purple
+Texas,Brazoria,136,29.520443,-95.392509,Nitric oxide (NO),Orange
+Texas,Brazoria,136,28.964394,-95.354974,Sulfur dioxide,Orange
+Texas,Collin,126,33.144662,-96.828809,Lead (TSP) LC,Orange
+Texas,Dallas,172,32.820061,-96.860117,Carbon monoxide,Red
+Texas,Dallas,172,32.820061,-96.860117,Sulfur dioxide,Red
+Texas,Dallas,172,32.820061,-96.860117,Nitric oxide (NO),Red
+Texas,Denton,133,33.219069,-97.196284,Nitric oxide (NO),Orange
+Texas,Ellis,93,32.175417,-96.870189,Nitric oxide (NO),Yellow
+Texas,El Paso,154,31.765685,-106.455227,Carbon monoxide,Red
+Texas,El Paso,154,31.765685,-106.455227,Sulfur dioxide,Red
+Texas,El Paso,154,31.765685,-106.455227,Nitric oxide (NO),Red
+Texas,Galveston,133,29.385234,-94.93152,Sulfur dioxide,Orange
+Texas,Galveston,133,29.254474,-94.861289,Nitric oxide (NO),Orange
+Texas,Gregg,93,32.378696,-94.711813,Sulfur dioxide,Yellow
+Texas,Gregg,93,32.378696,-94.711813,Nitric oxide (NO),Yellow
+Texas,Harris,205,29.901036,-95.326137,Nitric oxide (NO),Purple
+Texas,Harris,205,29.623889,-95.474167,Sulfur dioxide,Purple
+Texas,Harris,205,29.733726,-95.257593,Carbon monoxide,Purple
+Texas,Harrison,111,32.669001,-94.167468,Nitric oxide (NO),Orange
+Texas,Harrison,111,32.470228,-94.481595,Sulfur dioxide,Orange
+Texas,Hunt,119,33.153088,-96.115572,Nitric oxide (NO),Orange
+Texas,Jefferson,122,30.036422,-94.071061,Sulfur dioxide,Orange
+Texas,Jefferson,122,30.036422,-94.071061,Nitric oxide (NO),Orange
+Texas,Karnes,29,28.88044,-97.888065,Nitric oxide (NO),Green
+Texas,Kaufman,157,32.564968,-96.317687,Sulfur dioxide,Red
+Texas,Kaufman,157,32.564968,-96.317687,Nitric oxide (NO),Red
+Texas,McLennan,114,31.653086,-97.070704,Carbon monoxide,Orange
+Texas,McLennan,114,31.653086,-97.070704,Sulfur dioxide,Orange
+Texas,Montgomery,122,30.350302,-95.425128,Nitric oxide (NO),Orange
+Texas,Navarro,80,32.031934,-96.399141,Sulfur dioxide,Yellow
+Texas,Navarro,80,32.031934,-96.399141,Nitric oxide (NO),Yellow
+Texas,Nueces,101,27.76534,-97.434262,Sulfur dioxide,Orange
+Texas,Orange,101,30.085263,-93.761341,Nitric oxide (NO),Orange
+Texas,Orange,101,30.153675,-93.725897,Sulfur dioxide,Orange
+Texas,Potter,125,35.236736,-101.787405,Sulfur dioxide,Orange
+Texas,Smith,119,32.344027,-95.415754,Nitric oxide (NO),Orange
+Texas,Tarrant,143,32.987891,-97.477175,Nitric oxide (NO),Orange
+Texas,Tarrant,143,32.664753,-97.337917,Carbon monoxide,Orange
+Texas,Travis,122,30.354944,-97.761803,Sulfur dioxide,Orange
+Texas,Travis,122,30.354944,-97.761803,Nitric oxide (NO),Orange
+Texas,Travis,122,30.35386,-97.69166,Carbon monoxide,Orange
+Texas,Webb,112,27.507904,-99.523949,Carbon monoxide,Orange
+Texas,Wilson,36,29.1307,-98.1481,Nitric oxide (NO),Green
