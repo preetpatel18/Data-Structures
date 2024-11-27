@@ -120,6 +120,7 @@ public class AirQualityTest {
 
    @Test
    public void testLoadFactor() {
+      
       fail("This test is not yet implemented. Replace this line with code to implement this test.");
    }
 
