@@ -1,0 +1,28 @@
+12
+h1 1 Skittles 5
+h2 1 Skittles 4
+h3 2 KitKat 3 Skittles 3
+h4 1 Skittles 8
+h5 1 Skittles 1
+h6 2 ReeseCups 9 Skittles 3
+h7 1 Skittles 9
+h8 1 Skittles 4
+h9 1 Skittles 2
+h10 1 Skittles 7
+h11 1 Skittles 9
+h12 1 Skittles 6
+14
+h1 h2 5
+h2 h3 2
+h2 h6 3
+h3 h4 7
+h4 h5 8
+h6 h7 8
+h5 h8 3
+h7 h8 9
+h8 h9 6
+h9 h10 7
+h9 h11 5
+h11 h12 6
+h12 h10 3
+h10 h1 12

@@ -1,0 +1,23 @@
+9
+h1 1 KitKat 6
+h2 2 KitKat 2 ReeseCups 4
+h3 1 KitKat 4
+h4 1 KitKat 5
+h5 1 KitKat 3
+h6 1 KitKat 1
+h7 1 KitKat 10
+h8 1 KitKat 3
+h9 1 KitKat 4
+12
+h1 h2 3
+h1 h3 4
+h1 h4 6
+h1 h7 4
+h2 h3 5
+h2 h5 5
+h3 h4 1
+h3 h5 8
+h4 h5 2
+h5 h6 9
+h7 h8 5
+h8 h9 4
